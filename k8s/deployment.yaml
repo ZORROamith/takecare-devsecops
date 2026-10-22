@@ -21,7 +21,7 @@ spec:
           type: RuntimeDefault
       containers:
         - name: takecare
-          image: takecare-app:1.0
+          image: takecare-app:1.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000

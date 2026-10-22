@@ -11,3 +11,4 @@ dast-reports/
 .pytest_cache/
 .coverage
 htmlcov/
+staticfiles/

@@ -16,6 +16,11 @@ RUN pip install --upgrade pip \
 
 COPY . .
 
+RUN DJANGO_SECRET_KEY=build-only-not-a-production-secret \
+    DJANGO_DEBUG=False \
+    DJANGO_ALLOWED_HOSTS=localhost \
+    python manage.py collectstatic --noinput
+
 RUN addgroup --system appgroup \
     && adduser --system --ingroup appgroup appuser \
     && mkdir -p /app/media /app/staticfiles \
