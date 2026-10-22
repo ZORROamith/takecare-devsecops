@@ -8,3 +8,5 @@ __pycache__/
 .coverage
 htmlcov/
 db.sqlite3
+
+dast-reports/

@@ -2,3 +2,4 @@ Django==5.2.18
 mysqlclient==2.3.0
 Pillow==13.0.0
 python-dotenv==1.2.4
+gunicorn==26.2.0
